@@ -1,0 +1,130 @@
+[
+  {
+    "id": "b4318802",
+    "name": "take 1 \u2014 surrogate",
+    "family": "custom_2d",
+    "family_label": "User-defined 2D part",
+    "params": [
+      "W",
+      "H",
+      "D",
+      "R"
+    ],
+    "ranges": {
+      "W": [
+        68.5,
+        168.0
+      ],
+      "H": [
+        36.0,
+        84.0
+      ],
+      "D": [
+        6.0,
+        14.0
+      ],
+      "R": [
+        4.8,
+        11.2
+      ]
+    },
+    "targets": {
+      "max_von_mises": "Peak von Mises (MPa)",
+      "max_disp": "Max displacement (mm)"
+    },
+    "part": {
+      "name": "take 1",
+      "parameters": {
+        "W": 120.0,
+        "H": 60.0,
+        "D": 10.0,
+        "R": 8.0
+      },
+      "outline": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "W",
+          "0"
+        ],
+        [
+          "W",
+          "H"
+        ],
+        [
+          "0",
+          "H"
+        ]
+      ],
+      "holes": [
+        {
+          "x": "W-25",
+          "y": "H/2",
+          "r": "R"
+        }
+      ],
+      "thickness": "5",
+      "segments": {
+        "0": {
+          "kind": "load",
+          "fx": 4000.0,
+          "fy": 10000.0
+        },
+        "1": {
+          "kind": "free"
+        },
+        "2": {
+          "kind": "free"
+        },
+        "3": {
+          "kind": "fixed",
+          "dof": "xy"
+        }
+      }
+    },
+    "mesh_size": 1.5,
+    "n_requested": 520,
+    "n_success": 520,
+    "n_failed": 0,
+    "failure_examples": [],
+    "metrics": {
+      "max_von_mises": {
+        "gaussian_process": {
+          "r2": 0.9998798721631411,
+          "nrmse_pct": 0.2561626428268155,
+          "median_ape_pct": 0.14407458876657808,
+          "worst_ape_pct": 1.6769964891474876
+        },
+        "linear": {
+          "r2": 0.9588097843911313,
+          "nrmse_pct": 4.743413654670106,
+          "median_ape_pct": 4.555270958597989,
+          "worst_ape_pct": 18.643117521444324
+        }
+      },
+      "max_disp": {
+        "gaussian_process": {
+          "r2": 0.9999997279430265,
+          "nrmse_pct": 0.011083487869487896,
+          "median_ape_pct": 0.00769548169538219,
+          "worst_ape_pct": 0.7032001248858273
+        },
+        "linear": {
+          "r2": 0.9658999024762077,
+          "nrmse_pct": 3.923957812844504,
+          "median_ape_pct": 9.149220043662554,
+          "worst_ape_pct": 26.231380338917198
+        }
+      }
+    },
+    "files": {
+      "max_von_mises": "models\\b4318802_max_von_mises.joblib",
+      "max_disp": "models\\b4318802_max_disp.joblib"
+    },
+    "dataset": "models\\b4318802_dataset.csv",
+    "created": "2026-09-20 18:55",
+    "build_minutes": 32.45
+  }
+]

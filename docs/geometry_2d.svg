@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="360" viewBox="0 0 560 360">
+  <rect width="560" height="360" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#333"/>
+    </marker>
+    <marker id="b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M10,1 L1,5 L10,9 z" fill="#333"/>
+    </marker>
+    <pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#888" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <text x="280" y="28" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#111">2D plate with a central hole — plane stress</text>
+
+  <rect x="140" y="70" width="280" height="200" fill="#eef2fa" stroke="#1B3B8F" stroke-width="2"/>
+  <circle cx="280" cy="170" r="42" fill="#ffffff" stroke="#1B3B8F" stroke-width="2"/>
+
+  <line x1="280" y1="70" x2="280" y2="270" stroke="#aaa" stroke-width="0.8" stroke-dasharray="8 3 2 3"/>
+  <line x1="140" y1="170" x2="420" y2="170" stroke="#aaa" stroke-width="0.8" stroke-dasharray="8 3 2 3"/>
+
+  <rect x="126" y="70" width="14" height="200" fill="url(#hatch)"/>
+  <line x1="140" y1="70" x2="140" y2="270" stroke="#333" stroke-width="2.5"/>
+  <text x="119" y="290" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#333">fixed in x</text>
+
+  <line x1="424" y1="100" x2="470" y2="100" stroke="#C0392B" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="424" y1="140" x2="470" y2="140" stroke="#C0392B" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="424" y1="200" x2="470" y2="200" stroke="#C0392B" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="424" y1="240" x2="470" y2="240" stroke="#C0392B" stroke-width="2" marker-end="url(#a)"/>
+  <text x="478" y="174" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#C0392B">10 kN</text>
+
+  <line x1="140" y1="300" x2="420" y2="300" stroke="#333" stroke-width="1" marker-start="url(#b)" marker-end="url(#a)"/>
+  <line x1="140" y1="274" x2="140" y2="306" stroke="#333" stroke-width="0.8"/>
+  <line x1="420" y1="274" x2="420" y2="306" stroke="#333" stroke-width="0.8"/>
+  <text x="280" y="318" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#111">W = 50 … 140</text>
+
+  <line x1="100" y1="70" x2="100" y2="270" stroke="#333" stroke-width="1" marker-start="url(#b)" marker-end="url(#a)"/>
+  <line x1="94" y1="70" x2="136" y2="70" stroke="#333" stroke-width="0.8"/>
+  <line x1="94" y1="270" x2="136" y2="270" stroke="#333" stroke-width="0.8"/>
+  <text x="92" y="166" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#111">H = 40 … 140</text>
+
+  <line x1="280" y1="170" x2="309.7" y2="140.3" stroke="#333" stroke-width="1" marker-end="url(#a)"/>
+  <circle cx="280" cy="170" r="2.5" fill="#333"/>
+  <text x="316" y="134" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#111">R = 5 … 30</text>
+
+  <text x="140" y="52" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#111">t = 2 … 10  (out of plane)</text>
+  <text x="140" y="344" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#555">All dimensions in mm.  Steel, E = 210 GPa, ν = 0.3.</text>
+</svg>

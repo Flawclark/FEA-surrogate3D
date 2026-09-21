@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# FEA Surrogate Toolkit
+#
+# Committed on purpose:
+#   surrogate_*.joblib, surrogate3d_*.joblib   pre-trained reference models
+#                                              (~2 MB) so the app runs on clone
+#   dataset*.csv, metrics*.json                reference data and accuracy
+#   sample_parts/, docs/*.svg                  worked examples and drawings
+# ---------------------------------------------------------------------------
+
+# Surrogates built in the app — personal, regenerate from "Create a surrogate"
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Gmsh and solver scratch
+*.msh
+*.vtk
+*.vtu
+
+# Logs and background-run output
+*.log
+nohup.out
+
+# Throwaway renders (the drawings that matter are the SVGs in docs/)
+docs/*.png
+test*.png
+tmp*/
+
+# Streamlit local secrets
+.streamlit/secrets.toml
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

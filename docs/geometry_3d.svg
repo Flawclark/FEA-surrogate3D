@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="740" height="400" viewBox="0 0 740 400">
+  <rect width="740" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,1 L9,5 L0,9 z" fill="#333"/>
+    </marker>
+    <marker id="b3" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M10,1 L1,5 L10,9 z" fill="#333"/>
+    </marker>
+    <pattern id="h3" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#888" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+
+  <text x="370" y="26" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#111">3D L-bracket — parameters in blue, fixed dimensions in grey</text>
+
+  <text x="70" y="56" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#555">Side view (x–z)</text>
+  <path d="M 70,290 L 278,290 L 278,269 L 107,269 A 16,16 0 0 1 91,253 L 91,160 L 70,160 Z"
+        fill="#eef2fa" stroke="#1B3B8F" stroke-width="2" stroke-linejoin="round"/>
+
+  <rect x="70" y="292" width="208" height="14" fill="url(#h3)"/>
+  <line x1="70" y1="290" x2="278" y2="290" stroke="#333" stroke-width="2.5"/>
+  <text x="174" y="322" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#333">base underside fully clamped</text>
+
+  <line x1="95" y1="150" x2="150" y2="150" stroke="#C0392B" stroke-width="2.2" marker-end="url(#a3)"/>
+  <text x="156" y="146" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#C0392B">1 kN</text>
+
+  <line x1="46" y1="160" x2="46" y2="290" stroke="#333" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <line x1="40" y1="160" x2="66" y2="160" stroke="#333" stroke-width="0.8"/>
+  <line x1="40" y1="290" x2="66" y2="290" stroke="#333" stroke-width="0.8"/>
+  <text x="42" y="150" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#1B3B8F">Hw 30–70</text>
+
+  <line x1="300" y1="269" x2="300" y2="290" stroke="#333" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <line x1="280" y1="269" x2="306" y2="269" stroke="#333" stroke-width="0.8"/>
+  <line x1="280" y1="290" x2="306" y2="290" stroke="#333" stroke-width="0.8"/>
+  <text x="310" y="284" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#1B3B8F">tb 5–15</text>
+
+  <line x1="70" y1="140" x2="91" y2="140" stroke="#333" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <line x1="70" y1="134" x2="70" y2="158" stroke="#333" stroke-width="0.8"/>
+  <line x1="91" y1="134" x2="91" y2="158" stroke="#333" stroke-width="0.8"/>
+  <text x="80" y="128" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#1B3B8F">tw 5–15</text>
+
+  <line x1="107" y1="253" x2="130" y2="230" stroke="#333" stroke-width="1" marker-start="url(#b3)"/>
+  <circle cx="107" cy="253" r="2.5" fill="#333"/>
+  <text x="134" y="228" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#1B3B8F">rf 2–16  (fillet)</text>
+
+  <line x1="70" y1="344" x2="278" y2="344" stroke="#777" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <text x="174" y="362" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#555">base length 80 (fixed)</text>
+
+  <text x="420" y="56" font-family="Segoe UI,Arial,sans-serif" font-size="13" fill="#555">Plan view (x–y)</text>
+  <rect x="420" y="160" width="208" height="156" fill="#f6f8fd" stroke="#1B3B8F" stroke-width="2"/>
+  <rect x="420" y="160" width="21" height="156" fill="#d8e1f5" stroke="#1B3B8F" stroke-width="1.2"/>
+  <text x="431" y="152" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="11.5" fill="#1B3B8F">web</text>
+
+  <circle cx="576" cy="199" r="10" fill="#ffffff" stroke="#1B3B8F" stroke-width="1.8"/>
+  <circle cx="576" cy="277" r="10" fill="#ffffff" stroke="#1B3B8F" stroke-width="1.8"/>
+  <line x1="562" y1="199" x2="590" y2="199" stroke="#aaa" stroke-width="0.8" stroke-dasharray="6 3"/>
+  <line x1="562" y1="277" x2="590" y2="277" stroke="#aaa" stroke-width="0.8" stroke-dasharray="6 3"/>
+  <line x1="576" y1="185" x2="576" y2="291" stroke="#aaa" stroke-width="0.8" stroke-dasharray="6 3"/>
+
+  <line x1="576" y1="277" x2="600" y2="301" stroke="#333" stroke-width="1" marker-start="url(#b3)"/>
+  <text x="604" y="308" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#1B3B8F">rh 3–8</text>
+
+  <line x1="650" y1="160" x2="650" y2="316" stroke="#777" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <line x1="630" y1="160" x2="656" y2="160" stroke="#777" stroke-width="0.8"/>
+  <line x1="630" y1="316" x2="656" y2="316" stroke="#777" stroke-width="0.8"/>
+  <text x="660" y="242" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#555">60</text>
+
+  <line x1="420" y1="344" x2="576" y2="344" stroke="#777" stroke-width="1" marker-start="url(#b3)" marker-end="url(#a3)"/>
+  <line x1="420" y1="320" x2="420" y2="350" stroke="#777" stroke-width="0.8"/>
+  <line x1="576" y1="320" x2="576" y2="350" stroke="#777" stroke-width="0.8"/>
+  <text x="498" y="362" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="12.5" fill="#555">hole centres at 60 (fixed)</text>
+
+  <text x="70" y="388" font-family="Segoe UI,Arial,sans-serif" font-size="12" fill="#555">All dimensions in mm.  Steel, E = 210 GPa, ν = 0.3.  Load applied across the full web top face.</text>
+</svg>
